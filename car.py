@@ -21,7 +21,7 @@ mic_dev.channel_config(mic_dev.CHANNEL_0, mic_dev.RECEIVER, align_mode=I2S.STAND
 mic_dev.set_sample_rate(sample_rate)
 print(mic_dev)
 
-player = audio.Audio(path="/sd/record_1.wav", is_create=True, samplerate=sample_rate)
+player = audio.Audio(path="/sd/record_1.wav", is_create=False, samplerate=sample_rate)
 queue = []
 
 lcd.draw_string(20,50,"REC")
